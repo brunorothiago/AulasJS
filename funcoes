@@ -1,0 +1,76 @@
+/*
+conjuntos(set){
+    A = {1, 2, 3}
+    B =  {1, 2, 2, 3} 
+    A = B -> são idempotentes porque valores repetidos não são considerados
+    C = {3, 2, 1} comutativos porque as posições importam
+    A = C
+
+    A={1,2,3} B={2, 3}
+    AxB={(1, 2), (1, 3), (2,2), (2,3), (3,2), (3,3)}
+    
+
+    A = {x | x cursa SI no 3 ciclo}
+    B={0,1,2,3,4,5,6,7,8,9,10}
+    AXB={(Gabriel, 0), (Gabriel, 1), (Gabriel, 2)... (Bruna, 10)}
+
+    A={A, 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K}
+    N={paus, copas, espadas, ouros}
+    AxN = {(A, paus), (A, copas), (A, espadas), (A, ouros)...(K, ouros)}
+    |AxN| = |3.4 =
+     52
+
+     B={1,2,3}
+     A={2,3}
+     C={3, 4}
+
+     A c B? sim
+     C c B? não
+
+     Função: sejam A e B conjuntos, e f conjunto tal que f c AxB, f é dira uma função denotada por f:A->B, ou seja, A é a entrada (ou domínio) e saída B, se satisfizer:
+
+     1 - para cada entrada, só podemos ter uma saída
+     2 - uma entrada tem que possuir, obrigatoriamente, uma saída
+     EXEMPLO:
+
+     A={1,2,3}
+     B={4, 5}
+     f ={(1, 4), (2,4), (3,5)}
+     ACIMA É UMA Função
+
+     A={1,2,3}
+     B={4, 5}
+     f ={(1, 4), (1,5), (2,4), (3, 5)}
+     NÃO É UMA FUNÇÃO PORQUE PARA CADA ENTRADA HÁ MAIS DE UMA SAÍDA
+
+     COMPOSIÇÃO:
+
+     f(x) = xˆ2
+     g(x) = x+3
+     f(g(x)) = f o g(x) = (x+3)ˆ2
+    g (f(x)) = xˆ2 + 3
+
+    Exemplo de função
+
+    let g = x => x + 3; onde x é o parâmetro, e x + 3 é o retorno
+    g (1) = 1 + 3 = 4
+
+    Equational reasoning:
+
+    let soma = x => (y => x + y)
+    soma (3)(5) = 
+    soma (3) = y => 3 + y
+    soma(3)(5) = 3 + 5 = 8
+
+    Callback (high order function): são funções que recebem e/ou retornam outras
+
+    let apply = (f,x) => f(x)
+    apply(x => 2 * x, 7) = (x => 2 * x) (7) = 2 * 7 = 14
+
+    For each: dado uma lista [e1, e2... en] e uma função f, temos que: [e1, e2...en].forEach(f)
+
+    ações: f(e1) - ação
+           f(e2) - ação
+           f(en) - ação
+}
+*/
